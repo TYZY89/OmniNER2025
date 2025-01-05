@@ -14,16 +14,16 @@ cd LLaMA-Factory
 pip install -e ".[torch,metrics]"
 ```
 
-### Using OmniNER2024
+### Using OmniNER2025
 
-To use the OmniNER2024 benchmark with the LLaMA-Factory framework, follow these steps:
+To use the OmniNER2025 benchmark with the LLaMA-Factory framework, follow these steps:
 
-1. **Update `data/dataset_info.json`**: Add dataset information for OmniNER2024 to the `data/dataset_info.json` file. Ensure the format and details are consistent with existing entries.
+1. **Update `data/dataset_info.json`**: Add dataset information for OmniNER2025 to the `data/dataset_info.json` file. Ensure the format and details are consistent with existing entries.
 
 2. **Add YAML Files**: Add the YAML files from this repository (e.g., examples/train_lora/qwen2_7b_instruct_OmniNER_benchmarks/qwen7b_lora_sft.yaml) to the `examples/train_lora` directory in the llama-factory framework. Ensure the paths and dataset names in the YAML files match the entries in `data/dataset_info.json`.
 
 > **Note:**
-> **The OmniNER2024 benchmark is not yet open-sourced. However, we will be open-sourcing it soon and will update the repository with the benchmark once it is available.**
+> **The OmniNER2025 benchmark is not yet open-sourced. However, we will be open-sourcing it soon and will update the repository with the benchmark once it is available.**
 
 ### Quickstart
 
@@ -43,16 +43,16 @@ llamafactory-cli train examples/train_lora/qwen7b_lora_predict.yaml
 
 #### Evaluation
 
-To evaluate the model on the OmniNER2024 benchmark, use the evaluate.py script. Here is how you can run the evaluation:
+To evaluate the model on the OmniNER2025 benchmark, use the evaluate.py script. Here is how you can run the evaluation:
 
 ```bash
 python examples/evaluate.py --path <path_to_predicted_jsonl> 
 ```
 Replace **<path_to_predicted_jsonl>** with the path to the JSONL file generated from the prediction step.
 
-### OmniNER2024 using BERT
+### OmniNER2025 using BERT
 
-For instructions on using OmniNER2024 with BERT, please refer to the examples in the `examples/BERT-NER` directory in this repository. This directory contains detailed examples and scripts for fine-tuning and evaluating BERT models on the OmniNER2024 dataset.
+For instructions on using OmniNER2025 with BERT, please refer to the examples in the `examples/BERT-NER` directory in this repository. This directory contains detailed examples and scripts for fine-tuning and evaluating BERT models on the OmniNER2024 dataset.
 
 ### ERRTA
 
