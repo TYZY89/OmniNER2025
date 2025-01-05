@@ -1,4 +1,4 @@
-# OmniNER2024
+# OmniNER2025
 
 ## Acknowledgments
 
